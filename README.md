@@ -14,6 +14,9 @@
 📝 Logging system to track sent images / نظام لوق لتتبع الصور المرسلة
 - 
 
+## 📸 Preview / معاينة الصور
+
+## 🖼️  Panel Control / لوحة التحكم
 ![Avatar Panel Control](https://i.postimg.cc/vmsJSkQh/Screenshot-Chrome.png)
 
 ## ⚙️ Configuration
