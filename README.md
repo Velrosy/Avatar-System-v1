@@ -1,18 +1,16 @@
-
 # Avatar-System-v1
-The best Avatar System 
+✨ The Best Avatar System ✨
 
+## ⚙️ Configuration
+Edit the `config.json` file with your own settings:
 
-  "token":"Put_Your_Token_here", // حط التوكن هنا 
-  
-  "PREFIX":"+", // تقدر تغيره على راحتك 
-  
-  "VoiceChannel":"", // ايدي روم الفويس 
-  
-  "PREfix":"+send-proflie", // هذا امر ارسال الافتارات تقدر تعدل عليه 
-  
-  "PROFILE_ROOM_ID":"Put_here_Profile_channel_id", // حط هنا ايدي الروم الي بدك تنرسل له الافتارات 
-  
-  "PREFIx":"+send-image", // امر ارسال الافتارات والبنرات 
-  
-  "LOG_CHANNEL_ID":"" // ايدي لوق تحميل افتار او بنر
+```json
+{
+  "token": "Put_Your_Token_here",            // ضع التوكن هنا
+  "PREFIX": "+",                             // غيره على راحتك
+  "VoiceChannel": "",                        // ايدي روم الفويس
+  "PREfix": "+send-proflie",                 // أمر إرسال الافتارات
+  "PROFILE_ROOM_ID": "Put_Profile_channel_id", // روم إرسال الافتارات
+  "PREFIx": "+send-image",                   // أمر إرسال الافتارات والبنرات
+  "LOG_CHANNEL_ID": ""                       // روم اللوق لتحميل الصور
+}
