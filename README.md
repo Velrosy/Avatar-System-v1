@@ -16,9 +16,9 @@
 
 ## 📸 Preview / معاينة الصور
 
-## 🖼️  Panel Control / لوحة التحكم
+🖼️  Panel Control / لوحة التحكم
 ![Avatar Panel Control](https://i.postimg.cc/vmsJSkQh/Screenshot-Chrome.png)
-
+![Avatar Paneel Control](https://i.postimg.cc/vmsJSkQh/Screenshot-Chrome.png)
 ## ⚙️ Configuration
 Edit the `config.json` file with your own settings:
 
