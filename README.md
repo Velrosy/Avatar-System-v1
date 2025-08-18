@@ -1,2 +1,13 @@
+
 # Avatar-System-v1
 The best Avatar System 
+
+{
+  "token":"Put_Your_Token_here", // حط التوكن هنا
+  "PREFIX":"+", // تقدر تغيره على راحتك
+  "VoiceChannel":"", // ايدي روم الفويس
+  "PREfix":"+send-proflie", // هذا امر ارسال الافتارات تقدر تعدل عليه
+  "PROFILE_ROOM_ID":"Put_here_Profile_channel_id", // حط هنا ايدي الروم الي بدك تنرسل له الافتارات
+  "PREFIx":"+send-image", // امر ارسال الافتارات والبنرات
+  "LOG_CHANNEL_ID":"" // ايدي لوق تحميل افتار او بنر
+}
