@@ -19,6 +19,9 @@
 🖼️  Panel Control / لوحة التحكم
 ![Avatar Panel Control](https://i.postimg.cc/vmsJSkQh/Screenshot-Chrome.png)
 ![Avatar Paneel Control](https://i.postimg.cc/htTFscqh/Screenshot-Chrome-1.png)
+🖼️ Download Avatar & Banner & Proflie 
+![Proflie Download](https://i.postimg.cc/1zrkxBXQ/Screenshot-Chrome-2.png)
+![Proflie Download](https://i.postimg.cc/3RrP3G0D/Screenshot-Chrome-3.png)
 ## ⚙️ Configuration
 Edit the `config.json` file with your own settings:
 
