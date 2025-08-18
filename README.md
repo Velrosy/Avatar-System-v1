@@ -4,6 +4,7 @@
 ## ⚙️ Configuration
 Edit the `config.json` file with your own settings:
 
+![Avatar Panel Control](https://i.postimg.cc/vmsJSkQh/Screenshot-Chrome.png)
 ```json
 {
   "token": "Put_Your_Token_here",            // ضع التوكن هنا
@@ -14,3 +15,4 @@ Edit the `config.json` file with your own settings:
   "PREFIx": "+send-image",                   // أمر إرسال الافتارات والبنرات
   "LOG_CHANNEL_ID": ""                       // روم اللوق لتحميل الصور
 }
+
