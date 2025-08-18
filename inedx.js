@@ -28,7 +28,7 @@ const client = new Client({
   partials: [Partials.Message, Partials.Channel, Partials.Reaction]
 });
 
-const { PREFIX, token ,VoiceChannel , PREfix , PROFILE_ROOM_ID , LOG_CHANNEL_ID } = require('./config.json')
+const { PREFIX, token ,VoiceChannel , PREfix , PROFILE_ROOM_ID , LOG_CHANNEL_ID , PREFIx } = require('./config.json')
 const { joinVoiceChannel } = require("@discordjs/voice");
 
 client.on("ready", async () => {
