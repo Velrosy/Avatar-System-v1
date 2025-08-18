@@ -31,7 +31,7 @@ Edit the `config.json` file with your own settings:
 - 📦 Uses `discord.js` v14 and other npm packages
 - contact Me If You Need Help (velrosy) ⬅️ Discord User
 
-[![License](https://img.shields.io/badge/License-Read-It-red)](LICENSE.md)
+[![License](https://img.shields.io/badge/License-Custom-red)](LICENSE.md)
 
 ```json
 {
