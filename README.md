@@ -22,8 +22,16 @@
 ## 🖼️ Download Avatar & Banner & Proflie 
 ![Proflie Download](https://i.postimg.cc/1zrkxBXQ/Screenshot-Chrome-2.png)
 ![Proflie Download](https://i.postimg.cc/3RrP3G0D/Screenshot-Chrome-3.png)
-## ⚙️ Configuration
-Edit the `config.json` file with your own settings:
+
+ ## 🎮 Commands / الأوامر
+
+| Command / الأمر       | Description / الوصف                                 |
+|----------------------|---------------------------------------------------|
+| `+send-proflie`       | Send avatar with HEX colors / إرسال صورة الأفاتار مع الألوان |
+| `+send-image`         | Send banner or image / إرسال صورة أو بانر          |
+| `+panel-contorl`      | send profile panel control / إرسال لوحة التحكم  |
+| `+ads-phrase`          | Add new phrases / إضافة عبارة جديدة |
+
 
 ## 🏆 Credits
 - 👨‍💻 Developed by **Velrosy**
@@ -33,10 +41,14 @@ Edit the `config.json` file with your own settings:
 
 [![License](https://img.shields.io/badge/License-Custom-red)](LICENSE.md)
 
+## ⚙️ Configuration
+Edit the `config.json` file with your own settings:
+
+
 ```json
 {
   "token": "Put_Your_Token_here",            // ضع التوكن هنا
-  "PREFIX": "Put_Your_Prefix_here",                             // غيره على راحتك
+  "PREFIX": "+",                             // غيره على راحتك 
   "VoiceChannel": "Put_Voice_Channel_Id_Here",                        // ايدي روم الفويس
   "PREfix": "+send-proflie",                 // أمر إرسال الافتارات
   "PROFILE_ROOM_ID": "Put_Profile_channel_id", // روم إرسال الافتارات
