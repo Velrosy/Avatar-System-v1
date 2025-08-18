@@ -18,7 +18,7 @@
 
 🖼️  Panel Control / لوحة التحكم
 ![Avatar Panel Control](https://i.postimg.cc/vmsJSkQh/Screenshot-Chrome.png)
-![Avatar Paneel Control](https://i.postimg.cc/vmsJSkQh/Screenshot-Chrome.png)
+![Avatar Paneel Control](https://i.postimg.cc/htTFscqh/Screenshot-Chrome-1.png)
 ## ⚙️ Configuration
 Edit the `config.json` file with your own settings:
 
