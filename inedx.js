@@ -115,17 +115,17 @@ client.on(Events.MessageCreate, async (msg) => {
     return msg.reply(`✅ تم إضافة العبارة إلى ${cat}`);
   }
 
-  // إرسال واجهة الأدوات
-  if (msg.content === PREFIX + 'profile-tools') {
+  
+  if (msg.content === PREFIX + 'panel-control') {
     const embed = new EmbedBuilder()
-      .setTitle('🧰 أدوات البروفايل')
+      .setTitle('Avatar Panel Control')
       .setDescription('اختر أحد الخيارات بالأسفل')
       .setColor('#2F3136');
 
     const selectRow = new ActionRowBuilder().addComponents(
       new StringSelectMenuBuilder()
         .setCustomId('choose_phrase_cat')
-        .setPlaceholder('🎚️ اختر تصنيف العبارات')
+        .setPlaceholder('اختر تصنيف العبارات')
         .addOptions([
           { label: 'عبارات عربية', value: 'arabic' },
           { label: 'English phrases', value: 'english' },
@@ -142,7 +142,7 @@ client.on(Events.MessageCreate, async (msg) => {
   }
 });
 
-// ✅ اختيار التصنيف (Select Menu)
+
 client.on(Events.InteractionCreate, async (interaction) => {
   if (!interaction.isStringSelectMenu()) return;
   if (interaction.customId !== 'choose_phrase_cat') return;
@@ -166,7 +166,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
   await interaction.reply({ embeds: [embed], components: [navRow], ephemeral: true });
 });
 
-// ✅ تنقل بين العبارات (prev/next)
+
 client.on(Events.InteractionCreate, async (interaction) => {
   if (!interaction.isButton()) return;
   if (!['prev', 'next'].includes(interaction.customId)) return;
@@ -189,7 +189,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
   await interaction.update({ embeds: [embed] });
 });
 
-// ✅ زر فتح المودال
+
 client.on(Events.InteractionCreate, async (interaction) => {
   if (!interaction.isButton()) return;
   if (!['get_avatar', 'get_banner'].includes(interaction.customId)) return;
@@ -215,7 +215,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
   }
 });
 
-// ✅ استجابة المودال (عرض الأفتار أو البنر)
+
 client.on(Events.InteractionCreate, async (interaction) => {
   if (!interaction.isModalSubmit()) return;
 
@@ -282,7 +282,7 @@ function saveUsage(data) {
   fs.writeFileSync(USAGE_FILE, JSON.stringify(data, null, 2));
 }
 
-// 🖼️ عند تنفيذ الأمر
+
 async function handleSendImage(message) {
   const attachment = message.attachments.first();
   if (!attachment || !attachment.contentType?.startsWith('image/')) {
@@ -336,7 +336,7 @@ async function handleSendImage(message) {
   });
 }
 
-// 📩 زر التحميل: إرسال الصورة في الخاص + لوق
+
 async function handleDMButton(interaction) {
   const [_, senderId, selectedRoomId] = interaction.customId.split('-');
   const imageUrl = interaction.message.embeds[0]?.image?.url;
@@ -357,10 +357,10 @@ async function handleDMButton(interaction) {
   }
 
   try {
-    // تأجيل التفاعل لإعطاء وقت للإجراء
+
     await interaction.deferUpdate();
 
-    await receiver.send({ files: [imageUrl] });  // إرسال الصورة في الخاص
+    await receiver.send({ files: [imageUrl] });  
 
     usageData[key] = now;
     saveUsage(usageData);
@@ -380,7 +380,7 @@ async function handleDMButton(interaction) {
       await logChannel.send({ embeds: [logEmbed] });
     }
 
-    // الرد بعد إتمام العملية
+  
     await interaction.followUp({ content: '✅ تم إرسال الصورة لك في الخاص!', ephemeral: true });
 
   } catch {
@@ -388,7 +388,7 @@ async function handleDMButton(interaction) {
   }
 }
 
-// ✅ أحداث البوت
+
 client.on(Events.MessageCreate, async (message) => {
   if (!message.content.startsWith(PREFIx) || message.author.bot) return;
   await handleSendImage(message);
