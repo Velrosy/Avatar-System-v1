@@ -28,7 +28,7 @@ const client = new Client({
   partials: [Partials.Message, Partials.Channel, Partials.Reaction]
 });
 
-const { PREFIX, token } = require('./config.json')
+const { PREFIX, token ,VoiceChannel , PREfix , PROFILE_ROOM_ID } = require('./config.json')
 const { joinVoiceChannel } = require("@discordjs/voice");
 
 client.on("ready", async () => {
@@ -37,7 +37,7 @@ client.on("ready", async () => {
     `Velros 2k?`,
     `افضل سيرفر`,
     `لساتك تبحث على افتار وانا موجود؟`,
-    `40%`,
+    `خليك مميز عن الباقي`,
     `افضل العبارات بضغطة زر فقط`,
   ];
   console.log(`================`);
@@ -71,7 +71,7 @@ client.on("ready", async () => {
 });
 
 
-var VoiceChannel = `1387648547952001076`;
+
 client.on("ready", () => {
   setInterval(async () => {
     client.channels
@@ -253,13 +253,11 @@ client.on(Events.InteractionCreate, async (interaction) => {
 
 
 
-// إعدادات أساسية
-const PREFIx = '+send-image';
-const LOG_CHANNEL_ID = '1299415775475400739';
-const COOLDOWN_MS = 10 * 60 * 1000; // 10 دقائق
+
+const COOLDOWN_MS = 10 * 60 * 1000; 
 const USAGE_FILE = path.join(__dirname, 'buttonUsage.json');
 
-// 🔁 خريطة الرومات وأنواع التصاميم
+
 const ROOM_DATA = {
   '1381752348380233810': { label: 'Avatar Boys', type: 'أفتار' },
   '1387496430985416724': { label: 'Avatar Girls', type: 'أفتار' },
@@ -406,8 +404,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
 
 
 
-const PREfix = '$send-proflie';
-const PROFILE_ROOM_ID = '1381752704086310952';
+
 const sessions = new Map();
 
 client.on(Events.MessageCreate, async (message) => {
