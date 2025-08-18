@@ -41,6 +41,30 @@
 
 [![License](https://img.shields.io/badge/License-Custom-red)](LICENSE.md)
 
+### 📂 إعدادات الغرف / Rooms Configuration
+
+**العربية:**
+لتشغيل البوت بشكل صحيح، يجب على المستخدم **تغيير أيدي الرومات (Channel IDs)** فقط لتتناسب مع سيرفرك.
+⚠️ لا تغير قيمة **label** أو **type**، فهي مهمة لعمل البوت بشكل صحيح.
+
+**English:**
+To run the bot correctly, users should **only replace the channel IDs** with their own server channels.
+⚠️ Do **not** change the **label** or **type** values, as they are essential for the bot to function properly.
+
+```javascript
+const ROOM_DATA = {
+  '123456789012345678': { label: 'Avatar Boys', type: 'أفتار' },
+  '234567890123456789': { label: 'Avatar Girls', type: 'أفتار' },
+  '345678901234567890': { label: 'Banner', type: 'بنر' },
+  '456789012345678901': { label: 'Anime', type: 'أفتار أنمي' },
+};
+```
+
+> ⚠️ ملاحظة / Note: تأكد أن البوت لديه صلاحية **إرسال الرسائل وإرفاق الملفات** في هذه الرومات.
+> Make sure the bot has permissions to **send messages and attach files** in these channels.
+
+
+
 ## ⚙️ Configuration
 Edit the `config.json` file with your own settings:
 
