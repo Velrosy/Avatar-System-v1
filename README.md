@@ -65,8 +65,7 @@ const ROOM_DATA = {
 >
 > 
 
-[![downloadsBadge](https://img.shields.io/npm/dt/Avatar-System-v1?style=for-the-badge)](https://npmjs.com/Avatar-System-v1)
-[![versionBadge](https://img.shields.io/npm/v/Avatar-System-v1?style=for-the-badge)](https://npmjs.com/Avatar-System-v1)
+
 
 
 
